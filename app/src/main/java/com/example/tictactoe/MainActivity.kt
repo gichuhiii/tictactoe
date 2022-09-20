@@ -50,14 +50,16 @@ class MainActivity : AppCompatActivity() {
             return
         addToBoard(view)
 
+        //checks for victory and displays scores
+
         if (checkForVictory(NOUGHT))
         {
-           // noughtsScore++
+            noughtsScore++
             result("Noughts Win !!")
         }
         if (checkForVictory(CROSS))
         {
-           // crossesScore++
+            crossesScore++
             result("Cross Win !!")
         }
 
@@ -92,7 +94,6 @@ class MainActivity : AppCompatActivity() {
 
         return false
     }
-
     private fun match (button: Button, symbol: String ) = button.text == symbol
 
     private fun result(s: String)
