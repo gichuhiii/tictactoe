@@ -98,6 +98,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun result(s: String)
     {
+        //displays points at the end of the game
         val message = "\nNoughts $noughtsScore\n\nCrosses $crossesScore"
         AlertDialog.Builder(this)
             .setTitle(title)
@@ -112,6 +113,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun resetBoard()
     {
+        //resets board after reset button is clicked
         for (button in boardlist)
         {
             button.text =""
